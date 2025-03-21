@@ -1,0 +1,56 @@
+.third_main {
+  background-image: url("../images/third_bg.png");
+  background-size: contain; /* Картинка полностью вписывается */
+  background-position: center center; /* Центрируем */
+  background-repeat: no-repeat;
+
+  width: 80%;
+  height: 70vh;
+  margin: 0 auto; /* Центрируем блок */
+  margin-top: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+/* Основной контейнер с текстом */
+#main_content2 {
+  margin-top: 80px;
+  width: 50%;
+  padding: 20px;
+  padding-top: 0;
+  margin-left: 50%; /* Смещаем вправо */
+  transform: translateX(-50%); /* Центрируем относительно левого края */
+  text-align: center; /* Текст остается слева */
+}
+
+#main_content2 h2 {
+  font-size: 60px;
+  margin-top: -5px;
+}
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .third_main {
+    background-image: url("../images/third_bg_mob.png");
+    width: 100%; /* На телефонах во всю ширину */
+    height: 70vh; /* Чуть меньше по высоте */
+  }
+
+  #main_content2 {
+    width: 90%;
+  }
+
+  #main_content2 h2 {
+    font-size: 40px;
+  }
+
+  .mobile-break {
+    display: inline;
+  }
+}

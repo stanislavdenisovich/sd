@@ -1,0 +1,114 @@
+.pricing {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.pricing h2 {
+  font-size: 45px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pricing p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 30%;
+  min-width: 300px;
+  padding-bottom: 20px;
+}
+
+.pricing-card img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.pricing-info {
+  padding: 20px;
+}
+
+.pricing-info h3 {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  color: #5a3dbf;
+  margin-bottom: 15px;
+}
+
+.pricing-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.pricing-info ul li {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+.pricing-info li {
+  text-align: left;
+}
+
+.order-btn {
+  background: linear-gradient(135deg, #5a3dbf, #4a2fad);
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background: linear-gradient(135deg, #4a2fad, #5a3dbf);
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+ul li strong {
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+  .pricing-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pricing-card {
+    width: 90%;
+  }
+}

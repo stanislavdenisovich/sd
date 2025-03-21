@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Маркетинговое агентство</title>
+    <link rel="stylesheet" href="static/css/first_page.css" />
+    <link rel="stylesheet" href="static/css/first_page_2.css" />
+    <link rel="stylesheet" href="static/css/first_page_3.css" />
+    <link rel="stylesheet" href="static/css/first_page_4.css" />
+    <link rel="stylesheet" href="static/css/first_page_5.css" />
+    <link rel="stylesheet" href="static/css/first_page_6.css" />
+    <link rel="stylesheet" href="static/css/footer.css" />
+    <link rel="stylesheet" href="static/css/header.css" />
+    <script src="https://main.bothelp.io/w/widget-button.js" defer></script> 
+ </head>
+  <body>
+    <header id="header">
+      <div class="header-content">
+        <div><img class="logo" src="static/images/sd.png" alt="SD Company" /></div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./templates/cases/cases.html">Кейсы и портфолио</a></li>
+            <li><a href="./templates/teem/teem.html">Команда</a></li>
+            <li><a href="./templates/contacts/contacts.html">Контакты</a></li>
+            <li class="dropdown">
+              <a>Услуги ▼</a>
+              <ul class="dropdown-menu">
+                <li><a href="./templates/services/targer.html">Таргет</a></li>
+                <li><a href="./templates/services/marketing.html">Маркетинг</a></li>
+                <li><a href="./templates/services/smm.html">SMM</a></li>
+                <li><a href="./templates/services/site.html">Создание сайтов</a></li>
+                <li><a href="./templates/services/tg_bot.html">Создание тг ботов</a></li>
+                <li><a href="./templates/services/individual.html">Индивидуальный заказ</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Бургер-кнопка -->
+    <div class="burger-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Мобильное меню -->
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="/index.html">Главная</a></li>
+        <li><a href="./templates/cases/cases.html">Кейсы и портфолио</a></li>
+        <li><a href="./templates/teem/teem.html">Команда</a></li>
+        <li><a href="templates/contacts/contacts.html">Контакты</a></li>
+
+        <li><a href="./templates/services/targer.html">Таргет</a></li>
+        <li><a href="./templates/services/marketing.html">Маркетинг</a></li>
+        <li><a href="./templates/services/smm.html">SMM</a></li>
+        <li><a href="./templates/services/site.html">Создание сайтов</a></li>
+        <li><a href="./templates/services/tg_bot.html">Создание тг ботов</a></li>
+        <li><a href="./templates/services/individual.html">Индивидуальный заказ</a></li>
+
+      </ul>
+    </nav>
+
+    <main class="first_main" >
+      <div class="main_content">
+        <h1>Маркетинговое агентство</h1>
+        <h2>полного цикла</h2>
+        <h4>
+          Приведём вам поток целевых клиентов <br />
+          Быстро и в большом количестве.
+        </h4>
+        <p>🔝 Рост продаж и конверсии</p>
+        <p>⏳ Вы экономите свое время</p>
+        <p>📈 Мы создаем стратегии для вас</p>
+
+        <a href="#telegram-bot-section" class="btn" >Увеличить продажи</a>
+      </div>
+    </main>
+    <div class="main_content " id="main_content">
+      <h2 class="fade-in-2">Весь спектр <br />предоставляемых нами услуг</h2>
+    </div>
+
+    <main class="second_main fade-in-2"></main>
+    <div class="second_bg_button">
+      <a href="#telegram-bot-section"  class="btn fade-in-2" id="btn_id">Заказать</a>
+    </div>
+
+    <div class="main_content fade-in-2" id="main_content2">
+      <h2>
+        С кем <span class="mobile-break"><br /></span> мы работаем
+      </h2>
+    </div>
+
+    <main class="third_main fade-in-2"></main>
+
+    <div class="tabs-section fade-in-2">
+      <h2>Почему мы?</h2>
+      <h4>Что мы делаем для получения максимального результата</h4>
+      <!-- Выпадающий список для мобильных -->
+      <select class="mobile-tabs">
+        <option value="tab1">Полный комплекс услуг ▼</option>
+        <option value="tab2">Индивидуальный подход </option>
+        <option value="tab3">Ориентация на результат </option>
+        <option value="tab4">Прозрачность и доверие </option>
+        <option value="tab5">Глубокий маркетинговый анализ </option>
+      </select>
+
+      <!-- Меню кнопок для ПК -->
+      <div class="tabs-menu">
+        <button class="tab-btn active" data-tab="tab1">
+          Полный комплекс услуг
+        </button>
+        <button class="tab-btn" data-tab="tab2">Индивидуальный подход</button>
+        <button class="tab-btn" data-tab="tab3">Ориентация на результат</button>
+        <button class="tab-btn" data-tab="tab4">Прозрачность и доверие</button>
+        <button class="tab-btn" data-tab="tab5">Глубокий маркетинговый анализ</button>
+      </div>
+
+<!-- Контент вкладок -->
+<div class="tabs-content">
+  <div class="tab-content active" id="tab1">
+    <img src="static/images/why_1.png" alt="Маркетинговый анализ">
+    <div class="tab-text">
+      <h3>Полный комплекс услуг</h3>
+      <p>Мы берём на себя все этапы развития вашего бизнеса в digital-среде — от создания сайта до построения маркетинговой стратегии и настройки рекламы. Вам не придётся искать несколько подрядчиков, всё необходимое вы получаете в одном месте.</p>
+      <a href="#telegram-bot-section" class="btn" id="btn_id">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="tab-content" id="tab2">
+    <img src="static/images/why_2.png" alt="Геотаргетинг">
+    <div class="tab-text">
+      <h3>Индивидуальный подход</h3>
+      <p>Мы понимаем, что каждый бизнес уникален, поэтому разрабатываем персональные решения, учитывая ваши цели, специфику ниши и потребности аудитории. Никаких шаблонов — только стратегии, работающие именно для вас.</p>
+      <a href="#telegram-bot-section" class="btn" id="btn_id">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="tab-content" id="tab3">
+    <img src="static/images/why_3.png" alt="Мультилендинг">
+    <div class="tab-text">
+      <h3>Ориентация на результат</h3>
+      <p>Для нас важен не процесс, а результат. Мы стремимся к тому, чтобы каждая наша работа приносила вам реальные показатели: рост продаж, привлечение новых клиентов и укрепление вашего бренда.</p>
+      <a href="#telegram-bot-section" class="btn" id="btn_id">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="tab-content" id="tab4">
+    <img src="static/images/why_4.png" alt="Система аналитики">
+    <div class="tab-text">
+      <h3>Прозрачность и доверие</h3>
+      <p>Вы всегда знаете, за что платите. Мы предоставляем детальные отчёты, объясняем каждый шаг и предлагаем рекомендации для дальнейшего развития. Наш подход — честность и открытость.</p>
+      <a href="#telegram-bot-section" class="btn" id="btn_id">Узнать подробнее</a>
+    </div>
+  </div>
+  <div class="tab-content" id="tab5">
+    <img src="static/images/why_5.png" alt="Передовые технологии">
+    <div class="tab-text">
+      <h3>Глубокий маркетинговый анализ</h3>
+      <p>Перед началом работы мы тщательно изучаем ваш бизнес, целевую аудиторию и конкурентов. Это позволяет нам создавать эффективные стратегии, которые действительно работают и приносят результат.</p>
+      <a href="#telegram-bot-section" class="btn" id="btn_id">Узнать подробнее</a>
+    </div>
+    </div>
+
+    <section class="pricing">
+      <h2 class="fade-in-2" style="margin-top: 100px;">Прайс услуг</h2>
+      <p class="fade-in-2">Мы собрали для Вас лучшие предложения по доступной цене! <br> Более подробно в нашем Telegram-боте!</p>
+  
+      <div class="pricing-container">
+          <div class="pricing-card fade-in-2">
+              <img src="static/images/price_1.jpg" alt="Премиум">
+              <div class="pricing-info">
+                  <h3>Пакет “Премиум” — Полный комплекс маркетинговых услуг</h3>
+                  <p class="price">200 000 тг. (14 дней)</p>
+                  <a href="./templates/services/marketing.html" class="btn">Узнать подробнее...</a>
+                </div>
+          </div>
+  
+          <div class="pricing-card fade-in-2">
+              <img src="static/images/price_2.jpg" alt="Стандарт">
+              <div class="pricing-info">
+                  <h3>Пакет “Стандарт” — Базовое продвижение и реклама</h3>
+                  <p class="price">150 000 тг. (14 дней)</p>
+                  <a href="./templates/services/marketing.html" class="btn">Узнать подробнее...</a>
+                </div>
+          </div>
+  
+          <div class="pricing-card fade-in-2">
+              <img src="static/images/price_3.jpg" alt="Сайт">
+              <div class="pricing-info">
+                  <h3>Создание сайта под ключ — от идеи до запуска</h3>
+                  <p class="price">от 100 000 тг. (от 7 дней)</p>
+                  <a href="./templates/services/site.html" class="btn">Узнать подробнее...</a>
+                </div>
+          </div>
+  
+          <div class="pricing-card fade-in-2">
+              <img src="static/images/price_4.png" alt="Консультация">
+              <div class="pricing-info">
+                  <h3>Создание Телеграмм-Ботов под ключ</h3>
+                  <p class="price">от 30 000 тг. (то 1 дня)</p>
+                  <a href="./templates/services/tg_bot.html" class="btn">Узнать подробнее...</a>
+                </div>
+          </div>
+  
+          <div class="pricing-card fade-in-2">
+              <img src="static/images/price_5.png" alt="SMM">
+              <div class="pricing-info">
+                  <h3>Индивидуальный подбор требований</h3>
+                  <p class="price">Цена не фиксирована</p>
+                  <a href="./templates/services/individual.html" class="btn">Узнать подробнее...</a>
+                </div>
+          </div>
+  
+          <div class="pricing-card fade-in-2">
+              <img src="static/images/price_6.png" alt="Реклама">
+              <div class="pricing-info">
+                  <h3>Настройка таргетированной рекламы</h3>
+                  <p class="price">от 80 000 тг. (на 1 месяц)</p>
+                  <a href="./templates/services/targer.html" class="btn">Узнать подробнее...</a>
+                </div>
+          </div>
+      </div>
+  </section>
+  <section class="about fade-in-2">
+    <div class="container">
+        <h2>Маркетинговое агентство <span>SD Company</span></h2>
+        <p class="intro">Мы создаём рекламу, которая не просто привлекает внимание, а работает на ваш бизнес. Маркетинг — наша страсть, а ваш успех — наша главная цель.</p>
+
+        <div class="about-content">
+            <div class="about-text">
+                <p>Многие предприниматели сталкиваются с трудностями в рекламе. Вам не нужно разбираться во всех тонкостях — просто обозначьте свою цель, а мы подберём оптимальное решение.</p>
+                <h3>Наши направления</h3>
+                <ul>
+                    <li><strong>Таргетированная реклама</strong> – привлекаем нужную аудиторию.</li>
+                    <li><strong>Контекстная реклама</strong> – повышаем видимость в поиске.</li>
+                    <li><strong>Разработка сайтов</strong> – создаём удобные веб-ресурсы.</li>
+                    <li><strong>SMM-продвижение</strong> – ведём соцсети, создаём контент.</li>
+                    <li><strong>Создание Telegram-ботов</strong> – автоматизируем общение и продажи.</li>
+                    <li><strong>Маркетинговая стратегия</strong> – подбираем решения под задачи.</li>
+                    <li><strong>Индивидуальный подбор услуг</strong> – адаптируем под ваш бизнес.</li>
+                </ul>
+            </div>
+
+            <div class="about-image">
+                <img src="static/images/sd.jpg" alt="SD Company">
+            </div>
+        </div>
+
+        <div class="about-work">
+            <h3>Как мы работаем</h3>
+            <ul>
+                <li>🔹 <strong>Социальные медиа</strong> – ведение и продвижение в Facebook и Instagram, настройка чат-ботов.</li>
+                <li>🔹 <strong>Онлайн-продвижение</strong> – запуск рекламных кампаний в Facebook Ads, Instagram Ads и Google Ads.</li>
+                <li>🔹 <strong>Разработка сайтов</strong> – создание стильных и эффективных веб-ресурсов.</li>
+                <li>🔹 <strong>Телеграм-боты</strong> – автоматизация процессов и повышение вовлечённости клиентов.</li>
+                <li>🔹 <strong>Фото и графика</strong> – создание уникального визуального контента.</li>
+                <li>🔹 <strong>Индивидуальный подход</strong> – адаптируем услуги под ваши бизнес-задачи.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+  <div class="footer-content">
+      <!-- Навигация -->
+      <div id="footer_del" class="footer-section navigation">
+          <h3>Навигация</h3>
+          <ul>
+            <li><a href="./index.html">Главная</a></li>
+            <li><a href="./templates/cases/cases.html">Кейсы и портфолио</a></li>
+            <li><a href="./templates/teem/teem.html">Команда</a></li>
+            <li><a href="./templates/contacts/contacts.html">Контакты</a></li>
+          </ul>
+      </div>
+
+      <!-- Услуги -->
+      <div id="footer_del" class="footer-section services">
+          <h3>Услуги</h3>
+          <ul>
+            <li><a href="./templates/services/targer.html">Таргет</a></li>
+            <li><a href="./templates/services/marketing.html">Маркетинг</a></li>
+            <li><a href="./templates/services/smm.html">SMM</a></li>
+            <li><a href="./templates/services/site.html">Создание сайтов</a></li>
+            <li><a href="./templates/services/tg_bot.html">Создание тг ботов</a></li>
+            <li><a href="./templates/services/individual.html">Индивидуальный заказ</a></li>
+          </ul>
+      </div>
+
+      <!-- Контакты -->
+      <div class="footer-section contact">
+          <h3>Контакты</h3>
+          <p><a href="tel:+77083641047">+7 (708) 364-10-47</a></p>
+          <p><a href="mailto:stanislavdenisovich5@gmail.com">stanislavdenisovich5@gmail.com</a></p>
+
+          <div class="footer-socials">
+              <a href="#" target="_blank"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuH7c5cLpGehi0b4iQk90fXUzC9p7Ebla13w&s" alt="Instagram"></a>
+              <a href="#" target="_blank"><img src="https://pngicon.ru/file/uploads/whatsapp.png" alt="WhatsApp"></a>
+          </div>
+      </div>
+        <!-- Telegram-бот с кнопкой -->
+        <div id="telegram-bot-section" class="footer-bot">
+          <h3>📩 Быстрый способ связаться с нами</h3>
+          <p class="highlight-target">Запустите нашего Telegram-бота и получите консультацию в 1 клик!</p>
+          <div id="bh-widget-button-root" data-bh-widget-id="2" data-bh-customer-id="496152"></div>
+      </div>
+  </div>
+
+
+
+  <div class="footer-bottom">
+      <p>© 2025 SD Company. Все права защищены.</p>
+  </div>
+</footer>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="static/js/first_page.js"></script>
+    <script src="static/js/first_page_why_us.js"></script>
+
+
+  </body>
+</html>

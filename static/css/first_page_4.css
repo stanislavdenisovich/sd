@@ -1,0 +1,218 @@
+.tabs-section {
+  text-align: center;
+  padding: 50px 20px;
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.mobile-tabs {
+  display: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 2px solid #333; /* Черная граница */
+  border-radius: 8px;
+  background: #fff;
+  color: #000; /* Черный текст */
+  cursor: pointer;
+  transition: 0.3s ease;
+  outline: none;
+  appearance: none; /* Убираем стандартный стиль браузера */
+  text-align: center;
+  position: relative;
+}
+
+/* Добавляем иконку стрелки вниз */
+.mobile-tabs::after {
+  content: " ▼";
+  font-size: 16px;
+  color: #000;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Эффект при наведении */
+.mobile-tabs:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Эффект при фокусе */
+.mobile-tabs:focus {
+  border-color: #555;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Стиль кнопок вкладок */
+.tabs-menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 10px 15px;
+  position: relative;
+  transition: 0.3s;
+  color: #666;
+}
+
+.tab-btn.active {
+  color: #000000;
+}
+
+.tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 50%;
+  height: 3px;
+  background: #000000;
+  transform: translateX(-50%);
+}
+
+/* Контент вкладок */
+.tabs-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.tab-content {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  text-align: left;
+  max-width: 100%;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.tab-content.active {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Стилизация изображений */
+.tab-content img {
+  width: 45%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Блок с текстом */
+.tab-text {
+  width: 50%;
+}
+
+.tab-text h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.tab-text p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Стилизация кнопки */
+.learn-more {
+  background: #5a3dbf;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more:hover {
+  background: #4a2fad;
+  transform: scale(1.05);
+}
+
+.tabs-section h2,
+.tabs-section h4 {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.tabs-section h2 {
+  font-size: 50px;
+  margin-bottom: 30px; /* Отступ между заголовками */
+}
+
+.tabs-section h4 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #666;
+  margin-bottom: 30px; /* Отступ между заголовками */
+}
+
+/* Адаптация под телефоны */
+@media (max-width: 768px) {
+  .tabs-section {
+    max-width: 90%;
+  }
+
+  .tabs-menu {
+    display: none;
+  }
+
+  .mobile-tabs {
+    display: block;
+  }
+
+  .tab-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tab-content img {
+    width: 80%;
+    max-width: 350px;
+  }
+
+  .tab-text {
+    width: 100%;
+  }
+
+  .tabs-section h2 {
+    font-size: 36px;
+  }
+
+  .tabs-section h4 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+  .tab-text h3 {
+    display: none;
+  }
+  .tab-text p {
+    font-size: 15px;
+    margin: 0;
+  }
+}

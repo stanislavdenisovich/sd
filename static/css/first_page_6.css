@@ -1,0 +1,125 @@
+.about {
+  padding: 60px 0;
+  background: #fff;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.about h2 span {
+  color: #000;
+}
+
+.about .intro {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #111;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+}
+
+.about-text li::before {
+  content: "✔";
+  color: black;
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-work {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.about-work h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.about-work ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-work li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+}
+
+.about-work li::before {
+  position: absolute;
+  left: 0;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .about-text {
+    max-width: 100%;
+    padding-right: 0;
+  }
+
+  .about-image {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .about-work {
+    text-align: left;
+  }
+}

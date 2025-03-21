@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.first_main {
+  background-image: url("../images/first_bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 100%;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+/* Основной контейнер с текстом */
+.main_content {
+  width: 50%;
+  padding: 20px;
+  padding-top: 0;
+  margin-left: 33%; /* Смещаем вправо */
+  transform: translateX(-40%); /* Центрируем относительно левого края */
+  text-align: left; /* Текст остается слева */
+}
+
+/* Заголовок */
+.main_content h1,
+h2,
+h4 {
+  font-size: 80px; /* Увеличенный размер */
+  font-weight: 800;
+  margin-bottom: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(
+    90deg,
+    #252525,
+    #818181,
+    #2c2c2c,
+    #363636,
+    #555555,
+    #363636
+  ); /* Перелив серых оттенков */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: gradientMove 3s infinite linear;
+}
+.main_content h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.main_content h4 {
+  font-size: 28px;
+  font-weight: 200;
+  margin-top: -5px;
+}
+
+/* Обычный текст */
+.main_content p {
+  font-size: 20px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #7a7a7a; /* Темно-серый для мягкости */
+  font-family: "Arial", sans-serif;
+}
+
+/* Анимация перелива */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Кнопка */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 15px 35px;
+  background: linear-gradient(90deg, #222, #555); /* Темный градиент */
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Эффект при наведении */
+.btn:hover {
+  background: linear-gradient(90deg, #111, #444);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 150px;
+}
+
+/* ============================= */
+/* 📱 Адаптация под мобильные устройства */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .main_content h1 {
+    font-size: 38px;
+  }
+
+  .main_content h2 {
+    font-size: 32px;
+  }
+
+  .main_content h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  /* Обычный текст меньше */
+  .main_content p {
+    margin-top: 20px;
+
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+  }
+
+  /* Контейнер адаптируем */
+  .main_content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center; /* Чтобы лучше смотрелось на мобилке */
+    transform: none;
+  }
+
+  /* Уменьшаем кнопку */
+  .btn {
+    font-size: 16px;
+  }
+
+  #btn_id {
+    padding: 15px 60px;
+  }
+
+  /* Уменьшаем высоту первого экрана */
+  .first_main {
+    height: 100vh; /* Высота 100% экрана */
+    display: flex;
+    background-size: 100% auto; /* Ширина 100% экрана, высота авто */
+    background-position: bottom; /* Размещаем картинку снизу */
+    background-image: url("../images/bg_tel.png");
+  }
+}
