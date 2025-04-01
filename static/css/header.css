@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Обычный стиль хедера (изначально relative) */
+header {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  padding: 10px 0;
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+  opacity: 1;
+  z-index: 1000;
+}
+
+/* Контейнер внутри */
+.header-content {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Когда хедер уезжает вверх */
+header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+/* Когда хедер становится фиксированным */
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  opacity: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Основные стили ссылок */
+nav a {
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+  font-weight: 600;
+  font-size: 18px;
+  color: #222; /* Обычный цвет текста */
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+/* ПОДЧЕРКИВАНИЕ (изначально скрыто) */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #111, #444, #000);
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+/* ГРАДИЕНТ НА ТЕКСТЕ при наведении */
+nav a:hover {
+  background: linear-gradient(45deg, #afafaf, #555, #8a8a8a);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textGradient 1.5s infinite linear;
+}
+
+/* Подчеркивание раскрывается при наведении */
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Анимация перелива текста */
+@keyframes textGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Стили для выпадающего меню */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #222;
+  width: 200px;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  border-radius: 5px;
+  display: block; /* Делаем его блочным */
+}
+
+/* Делаем пункты выпадающего меню вертикальными */
+.dropdown-menu li {
+  display: block;
+  border-bottom: 1px solid #333;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
+}
+
+/* Стили для ссылок внутри выпадающего меню */
+.dropdown-menu li a {
+  padding: 12px 20px;
+  color: #fff;
+  display: block;
+  transition: background 0.3s;
+}
+
+/* Показываем меню при наведении */
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  /* Логотип слева сверху */
+  .logo {
+    width: 120px; /* Можно уменьшить */
+    position: relative;
+    left: 0;
+    margin-left: 15px;
+  }
+
+  /* Меню делаем вертикальным */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Убираем margin у пунктов */
+  nav ul li {
+    margin-right: 0;
+  }
+
+  /* Выравниваем ссылки в центре */
+  nav a {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+
+  /* Адаптация выпадающего меню */
+  .dropdown-menu {
+    width: 100%;
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    display: none;
+  }
+
+  /* Показываем меню при клике */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* Бургер-кнопка */
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  z-index: 1100;
+}
+
+.burger-menu span {
+  width: 30px;
+  height: 4px;
+  background: #333;
+  margin: 5px 0;
+  transition: 0.3s ease;
+}
+
+/* Анимация бургера */
+.burger-menu.active span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+.burger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu.active span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Мобильное меню */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  transition: left 0.5s ease;
+  z-index: 1000;
+}
+
+/* Когда меню открыто */
+.mobile-nav.active {
+  left: 0;
+}
+
+/* Стили ссылок */
+.mobile-nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.mobile-nav li {
+  margin: 2px 0;
+}
+
+.mobile-nav a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.fade-in-2 {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Делаем бургер видимым только на мобильных */
+@media screen and (max-width: 768px) {
+  .burger-menu {
+    display: flex;
+  }
+  nav {
+    display: none;
+  }
+}

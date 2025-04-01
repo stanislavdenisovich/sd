@@ -1,0 +1,58 @@
+.second_main {
+  background-image: url("../images/second_bg.png");
+  background-size: contain; /* Картинка полностью вписывается */
+  background-position: center center; /* Центрируем */
+  background-repeat: no-repeat;
+
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto; /* Центрируем блок */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+/* Основной контейнер с текстом */
+#main_content {
+  margin-top: 80px;
+  width: 50%;
+  padding: 20px;
+  padding-top: 0;
+  margin-left: 50%; /* Смещаем вправо */
+  transform: translateX(-50%); /* Центрируем относительно левого края */
+  text-align: center; /* Текст остается слева */
+}
+
+#main_content h2 {
+  font-size: 50px;
+  margin-top: -5px;
+}
+.second_bg_button {
+  margin-top: 30px;
+  position: relative; /* Фиксируем относительно экрана */
+  top: 50%; /* Смещаем вниз на 50% экрана */
+  left: 50%; /* Смещаем вправо на 50% экрана */
+  transform: translate(-50%, -50%); /* Центрируем по X и Y */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .second_main {
+    background-image: url("../images/second_bg_mobile.png");
+    width: 100%; /* На телефонах во всю ширину */
+    height: 70vh; /* Чуть меньше по высоте */
+  }
+
+  #main_content {
+    width: 90%;
+  }
+
+  #main_content h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,229 @@
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1300px;
+  width: 100%;
+}
+.container-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  max-width: 1300px;
+  width: 100%;
+}
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.card-2 {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+.card-2:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+.card img {
+  margin-top: 20px;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card-2 img {
+  margin-top: 20px;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.card p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+.card-content-2 {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-2 h2 {
+  font-size: 24px;
+}
+
+.card-2 p {
+  font-size: 16px;
+  opacity: 0.8;
+}
+.card-content ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+.card-content li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+  text-align: left;
+}
+.card-content-2 ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
+}
+.card-content-2 li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+  color: #333;
+  text-align: left;
+}
+.card1 {
+  background: rgba(255, 145, 0, 0.2);
+}
+.card2 {
+  background: rgba(0, 59, 10, 0.2);
+}
+.card3 {
+  background: rgba(192, 192, 192, 0.2);
+}
+.card4 {
+  background: rgba(19, 19, 19, 0.2);
+}
+.card5 {
+  background: rgba(85, 85, 85, 0.2);
+}
+.card6 {
+  background: rgba(99, 7, 0, 0.2);
+}
+.card7 {
+  background: rgba(1, 16, 155, 0.2);
+}
+.card8 {
+  background: rgba(0, 0, 0, 0.322);
+}
+.card9 {
+  background: rgba(0, 124, 146, 0.2);
+}
+.card10 {
+  background: rgba(131, 67, 8, 0.2);
+}
+.card11 {
+  background: rgba(90, 0, 86, 0.2);
+}
+.card12 {
+  background: rgba(34, 94, 0, 0.2);
+}
+.card12 {
+  background: rgba(34, 94, 0, 0.2);
+}
+.card14 {
+  background: rgba(136, 100, 32, 0.2);
+}
+.card15 {
+  background: rgba(136, 44, 32, 0.2);
+}
+.card16 {
+  background: rgba(48, 47, 46, 0.2);
+}
+.card17 {
+  background: rgba(66, 5, 5, 0.2);
+}
+.card18 {
+  background: rgba(230, 187, 109, 0.2);
+}
+.card19 {
+  background: rgba(173, 156, 0, 0.2);
+}
+.card20 {
+  background: rgba(89, 95, 91, 0.2);
+}
+.card21 {
+  background: rgba(61, 24, 13, 0.2);
+}
+.card22 {
+  background: rgba(182, 9, 9, 0.2);
+}
+.card23 {
+  background: rgba(131, 101, 57, 0.2);
+}
+.card24 {
+  background: rgba(22, 80, 41, 0.2);
+}
+.card25 {
+  background: rgba(131, 65, 11, 0.2);
+}
+.card26 {
+  background: rgba(204, 186, 135, 0.2);
+}
+.card1-2 {
+  background: rgba(54, 54, 54, 0.2);
+}
+.card2-2 {
+  background: rgba(0, 59, 10, 0.2);
+}
+.card3-2 {
+  background: rgba(192, 192, 192, 0.2);
+}
+.card4-2 {
+  background: rgba(22, 0, 148, 0.2);
+}
+.card5-2 {
+  background: rgba(16, 80, 0, 0.2);
+}
+.card6-2 {
+  background: rgba(255, 114, 248, 0.2);
+}
+/* Адаптация под мобильные устройства */
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .container-2 {
+    grid-template-columns: 1fr;
+  }
+}
